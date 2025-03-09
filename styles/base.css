@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    display: block;
+    margin-right: 10px;
+
+}
+
+h2 {
+    background-color: rgb(230, 200, 172);
+    display: block;
+    margin: 1px;
+
+
+}
+
+nav {
+    background-color: rgb(214, 140, 70);
+
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav .active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #5f3b3b;
+    padding: 10px;
+    background-color: rgb(214, 140, 70);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+}
+
+section {
+    padding: 1rem;
+    background-color: white;
+}

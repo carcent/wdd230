@@ -1,0 +1,26 @@
+@media screen and (min-width:500px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        border: 1px solid #ccc;
+        padding: 1 rem;
+        box-sizing: border-box;
+    }
+
+    .card {
+        flex: 2;
+    }
+
+    .cardInfo {
+        flex: 1;
+    }
+}

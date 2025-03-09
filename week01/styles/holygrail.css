@@ -18,6 +18,7 @@ nav {
 main {
     background: coral;
     grid-column: 1 / 2;
+
 }
 
 .right-sidebar {
