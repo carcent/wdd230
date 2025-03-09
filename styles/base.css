@@ -50,3 +50,20 @@ section {
     padding: 1rem;
     background-color: white;
 }
+
+
+.week1 {
+    display: flex;
+    pad: 0;
+
+
+}
+
+.week1 li {
+    margin-right: 10px;
+
+}
+
+li {
+    list-style-type: none;
+}
