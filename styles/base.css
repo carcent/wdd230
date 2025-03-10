@@ -9,6 +9,10 @@ header img {
 
 }
 
+h1 {
+    color: rgb(15, 15, 27);
+}
+
 h2 {
     background-color: rgb(230, 200, 172);
     display: block;
@@ -17,6 +21,7 @@ h2 {
 
 nav {
     background-color: rgb(214, 140, 70);
+    color: black;
 
 }
 
