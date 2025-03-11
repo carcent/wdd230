@@ -57,7 +57,8 @@ section {
 }
 
 
-.week1 {
+.week1,
+.week2 {
     display: flex;
     pad: 0;
 
