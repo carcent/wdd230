@@ -60,7 +60,7 @@ section {
 .week1,
 .week2 {
     display: flex;
-    pad: 0;
+    padding: 0;
 
 
 }
