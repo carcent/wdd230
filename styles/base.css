@@ -1,3 +1,7 @@
+body {
+    background-color: azure;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -20,7 +24,7 @@ h2 {
 }
 
 nav {
-    background-color: rgb(214, 140, 70);
+    background-color: rgb(179, 227, 240);
     color: black;
 
 }
@@ -31,6 +35,10 @@ nav a:hover {
 
 nav .active {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color: rgb(2, 2, 20);
 }
 
 
@@ -72,4 +80,8 @@ section {
 
 li {
     list-style-type: none;
+}
+
+div {
+    background-color: azure;
 }
