@@ -1,6 +1,10 @@
 body {
     background-color: azure;
+    color: black;
+    font-family: Roboto;
 }
+
+
 
 header {
     display: flex;
@@ -11,6 +15,54 @@ header img {
     display: block;
     margin-right: 10px;
 
+}
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#darkModeToggle img {
+    width: 30px;
+    height: 30px;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #333333;
+    color: white;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode a {
+    color: white;
+}
+
+
+body.dark-mode a {
+    color: #ffcc00;
+}
+
+body.dark-mode a:hover {
+    color: #ffffff;
+}
+
+
+body.dark-mode .cardInfo p {
+    color: #ccc;
+}
+
+body.dark-mode .container .description {
+    color: white;
 }
 
 h1 {
@@ -37,7 +89,9 @@ nav .active {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-
+#myButton::before {
+    content: "☰";
+}
 
 #myButton {
     font-size: 1.5rem;
@@ -56,6 +110,10 @@ ul.menuLinks li a {
     padding: .75rem 2vw;
     color: #0a0a0a;
     text-decoration: none;
+}
+
+#myButton.open::before {
+    content: "✕";
 }
 
 ul.menuLinks {
