@@ -9,6 +9,11 @@
 
     }
 
+    .cta-button {
+        position: relative;
+        top: -190px;
+    }
+
     .event,
     .spotlight,
     .weather {
