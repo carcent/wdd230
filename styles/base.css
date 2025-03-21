@@ -116,6 +116,7 @@ ul.menuLinks li a {
     content: "✕";
 }
 
+
 ul.menuLinks {
     display: none;
 }
@@ -170,5 +171,31 @@ li {
 }
 
 div {
-    background-color: azure;
+    background-color: rgb(211, 230, 230);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.hero span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: .7rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
 }
