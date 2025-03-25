@@ -10,7 +10,7 @@ if (!visitCount) {
     visitCount = parseInt(visitCount, 10);
 }
 
-numVisits++;
+visitCount++;
 
 localStorage.setItem("visitCount", visitCount);
 
