@@ -7,6 +7,7 @@ th {
     border: 1px solid rgb(90, 87, 87);
     background-color: rgb(75, 73, 73);
     color: white;
+    border-bottom: none;
 }
 
 td {
@@ -29,6 +30,7 @@ th.acme-l {
 
 
 
+
 tbody tr:nth-child(even) {
     background-color: #aca9ac
 }
@@ -40,4 +42,5 @@ tbody tr:nth-child(odd) {
 caption {
     caption-side: bottom;
     margin: 10px;
+    text-align: center;
 }
