@@ -1,0 +1,43 @@
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid rgb(90, 87, 87);
+    background-color: rgb(75, 73, 73);
+    color: white;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+th.acme,
+th.acme-l {
+    background-color: rgb(9, 9, 53);
+    color: white;
+    text-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+}
+
+
+
+tbody tr:nth-child(even) {
+    background-color: #aca9ac
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+caption {
+    caption-side: bottom;
+    margin: 10px;
+}
