@@ -80,7 +80,6 @@ form {
 .f1 p {
     font-size: 0.9rem;
     color: var(--secondary-text-color);
-    margin-bottom: 1rem;
 }
 
 .f1 input[type="submit"] {
