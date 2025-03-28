@@ -47,10 +47,11 @@ body.dark-mode a {
     color: white;
 }
 
-
-body.dark-mode a {
-    color: #ffcc00;
+body.dark-mode nav {
+    background-color: rgb(18, 18, 49);
+    color: whitesmoke;
 }
+
 
 body.dark-mode a:hover {
     color: #ffffff;

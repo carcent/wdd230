@@ -1,66 +1,123 @@
+:root {
+    --primary-text-color: #21367a;
+    --secondary-text-color: #555;
+    --primary-bg-color: #f7f7f7;
+    --highlight-color: #4a26ce;
+    --btn-hover-color: #0f0a58;
+    --input-bg-color: #eee;
+    --input-border-color: #999;
+    --input-focus-color: #4a26ce;
+    --error-color: red;
+    --success-color: green;
+}
+
+
+
+form {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+    border-radius: 9px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    align-items: center;
+}
+
 .f1 fieldset {
-    margin: 2rem 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: .5rem 2%;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .f1 legend {
-    color: #445ba9;
-    padding: 0 .5rem;
+    color: var(--primary-text-color);
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    padding: 0;
 }
 
 .f1 label {
     display: block;
-    padding-top: 1rem;
-    color: red;
-    font-size: .9rem;
+    color: var(--primary-text-color);
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+}
+
+.f1 input[type="text"],
+.f1 input[type="email"],
+.f1 input[type="password"] {
+    background-color: var(--input-bg-color);
+    border: solid 1px var(--input-border-color);
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: var(--secondary-text-color);
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.f1 input[type="text"]:focus,
+.f1 input[type="email"]:focus,
+.f1 input[type="password"]:focus {
+    border-color: var(--input-focus-color);
+    outline: none;
+}
+
+.f1 input[type="text"]:required:valid,
+.f1 input[type="email"]:required:valid,
+.f1 input[type="password"]:required:valid {
+    border-right: 8px solid var(--success-color);
+}
+
+.f1 input[type="text"]:required:invalid,
+.f1 input[type="email"]:required:invalid,
+.f1 input[type="password"]:required:invalid {
+    border-right: 8px solid var(--error-color);
+}
+
+.f1 p {
+    font-size: 0.9rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 1rem;
+}
+
+.f1 input[type="submit"] {
+    background-image: linear-gradient(var(--highlight-color), var(--btn-hover-color));
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.f1 input[type="submit"]:hover {
+    background-color: var(--btn-hover-color);
+}
+
+.f1 input[type="range"] {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.f1 input[type="range"]:focus {
+    outline: none;
 }
 
 .f1 div {
     padding-top: 1rem;
-    color: #445ba9;
-    font-size: .9rem;
-
+    color: var(--primary-text-color);
+    font-size: 0.9rem;
 }
 
-.f1 input[type="text"],
-
-.f1 input[type="email"],
-
-.f1 input[type="password"] {
-    background-color: #eee;
-    display: block;
-    border: solid 1px #999;
-    border-radius: 6px;
-    padding: .75rem;
-    color: #555;
-    width: 100%;
-    max-width: 400px;
-    appearance: none;
-}
-
-.f1 input[type="radio"],
-.f1 input[type="checkbox"] {
-    margin-right: 6px;
-}
-
-.f1 input[type="submit"] {
-    border: none;
-    background-image: linear-gradient(#9c2c13, #6f200e);
-    color: #fff;
-    border-radius: 6px;
-    padding: .8rem;
-    width: 96%;
-    max-width: 400px;
-    margin: -1rem 2% 2rem 2%;
-    box-shadow: 1px 1px 4px #999;
-}
-
-.f1 input:required {
-    border-right: solid 8px red;
-}
-
-.f1 input:required:valid {
-    border-right: solid 8px green;
+#formmessage {
+    visibility: hidden;
+    color: var(--error-color);
+    font-size: 1rem;
+    margin-top: 1rem;
 }
