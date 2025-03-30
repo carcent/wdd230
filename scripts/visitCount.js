@@ -1,5 +1,6 @@
 
-let visitCount = localStorage.getItem('visit-count');
+
+let visitCount = localStorage.getItem('visitCount');
 
 
 if (!visitCount) {
@@ -15,3 +16,4 @@ visitCount++;
 localStorage.setItem("visitCount", visitCount);
 
 document.getElementById('visitCount').textContent = visitCount;
+
