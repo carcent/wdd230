@@ -10,3 +10,10 @@ window.onload = function () {
 
     document.getElementById('lastYear').textContent = year;
 };
+
+
+window.addEventListener('DOMContentLoaded', function () {
+    const timestampField = document.getElementById('timestamp');
+    const currentDateTime = new Date().toISOString();
+    timestampField.value = currentDateTime;
+});

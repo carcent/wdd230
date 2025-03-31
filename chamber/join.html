@@ -42,22 +42,53 @@
         </ul>
     </nav>
     <main>
-        <form method="get" action="thankyou.html" class="form1">
-            <fieldset>
-                <legend>
-                    <label for=""></label>
-                    <label for=""></label>
-                    <label for=""></label>
-                    <label for=""></label>
-                    <label for=""></label>
-                    <label for=""></label>
-                    <label for=""></label>
-                    <label for=""></label>
-                    <label for=""></label>
-                </legend>
-            </fieldset>
-        </form>
+        <div class="form-container">
+            <h2>Become part of a community of business leaders and entrepreneurs</h2>
+            <form method="get" action="thankyou.html" class="membership-form">
+                <fieldset>
+                    <legend>Join The chamber of Commerce</legend>
+                    <label>First Name* <input type="text" id="fname" name="fname" required></label>
+                    <label>Last Name* <input type="text" id="lname" name="lname" required></label>
+                    <label>Title or Position <input type="text" id="title" name="title" pattern="^[A-Za-z\s-]{7,}$"
+                            required
+                            title="Only letters, spaces, and hyphens are allowed. Minimum of 7 characters."></label>
+                    <label>Email address* <input type="email" name="email" placeholder="someone@byu.edu" required
+                            title="Please enter a valid email address"></label>
+                    <label>Mobile Phone Number* <input type="tel" name="phone" required></label>
+                    <label>Business/Organization's Name* <input type="text" name="bname" required></label>
+                    <label>Membership Level</label>
+                    <label><input type="radio" name="level" value="level1">NP Membership</label>
+                    <label><input type="radio" name="level" value="level2">Bronze Membership</label>
+                    <label><input type="radio" name="level" value="level3">Silver Membership</label>
+                    <label><input type="radio" name="level" value="level4">Gold Membership</label>
+                    <label>Business Organization Description<input type="textarea" id="bdesc" name="bdes"></label>
 
+                    <label><input type="hidden" id="timestamp" name="timestamp"></label>
+
+                </fieldset>
+
+                <input type="submit" value="Join the Chamber of Commerce">
+            </form>
+            <div class="membership-benefits">
+                <h3>Membership Level Benefits</h3>
+                <div class="benefit">
+                    <h4>NP Membership</h4>
+                    <p>No Fee, exclusive benefits for Non-Profit Organizations.</p>
+                </div>
+                <div class="benefit">
+                    <h4>Bronze Membership</h4>
+                    <p>Access to basic services, 10% discount on products.</p>
+                </div>
+                <div class="benefit">
+                    <h4>Silver Membership</h4>
+                    <p>Access to premium services, 20% discount on products, and priority support.</p>
+                </div>
+                <div class="benefit">
+                    <h4>Gold Membership</h4>
+                    <p>Exclusive services, 30% discount on products, free shipping, and 24/7 support.</p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -67,6 +98,7 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerButton.js"></script>
+    <script src="scripts/position.js"></script>
 
 
 </body>

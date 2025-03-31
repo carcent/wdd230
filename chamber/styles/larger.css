@@ -40,3 +40,34 @@
         box-shadow: 0 0 50px #111010;
     }
 }
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+
+.membership-form {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 10px;
+}
+
+.membership-benefits {
+    flex: 1;
+    max-width: 500px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
