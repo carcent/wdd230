@@ -53,9 +53,12 @@
                     <label>Title or Position <input type="text" id="title" name="title" pattern="^[A-Za-z\s-]{7,}$"
                             required
                             title="Only letters, spaces, and hyphens are allowed. Minimum of 7 characters."></label>
+                    <span id="title-error" class="error-message"></span>
                     <label>Email address* <input type="email" name="email" placeholder="someone@byu.edu" required
                             title="Please enter a valid email address"></label>
                     <label>Mobile Phone Number* <input type="tel" name="phone" required></label>
+                </fieldset>
+                <fieldset>
                     <label>Business/Organization's Name* <input type="text" name="bname" required></label>
                     <label>Membership Level</label>
                     <label><input type="radio" name="level" value="level1">NP Membership</label>
@@ -63,7 +66,7 @@
                     <label><input type="radio" name="level" value="level3">Silver Membership</label>
                     <label><input type="radio" name="level" value="level4">Gold Membership</label>
                     <label>Business Organization Description</label>
-                    <textarea id="bdesc" name="bdes" name="bdesc" rows="5" cols="40"
+                    <textarea id="bdesc" name="bdesc" rows="5" cols="40"
                         placeholder="Enter a brief description of your business or organization here..."></textarea>
 
                     <label><input type="hidden" id="timestamp" name="timestamp"></label>
