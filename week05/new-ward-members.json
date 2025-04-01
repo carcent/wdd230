@@ -1,0 +1,65 @@
+{
+    "families": [
+        {
+            "family name": "Palermo",
+            "Date family moved": "01/03/1915",
+            "Number of People in the family": 4,
+            "visited by bishopric": false,
+            "family member": [
+                {
+                    "Name": "Jose",
+                    "gender": "Male",
+                    "birthdate": "1980-05-28"
+                },
+                {
+                    "Name": "Carla",
+                    "gender": "Female",
+                    "birthdate": "1990-05-20"
+                },
+                {
+                    "Name": "Susan",
+                    "gender": "Female",
+                    "birthdate": "2010-01-05"
+                },
+                {
+                    "Name": "Julie",
+                    "gender": "Female",
+                    "birthdate": "2012-12-02"
+                }
+            ]
+        },
+        {
+            "family name": "Centurion",
+            "Date family moved": "04/10/1985",
+            "Number of People in the family": 5,
+            "visited by bishopric": false,
+            "family member": [
+                {
+                    "Name": "Cara",
+                    "gender": "Female",
+                    "birthdate": "2000-05-20"
+                },
+                {
+                    "Name": "Marcos",
+                    "gender": "Male",
+                    "birthdate": "1995-03-12"
+                },
+                {
+                    "Name": ":Laura",
+                    "gender": "Female",
+                    "birthdate": "2020-10-10"
+                },
+                {
+                    "Name": "Frank",
+                    "gender": "Male",
+                    "birthdate": "2022-03-17"
+                },
+                {
+                    "Name": "Maria",
+                    "gender": "Female",
+                    "birthdate": "2025-01-15"
+                }
+            ]
+        }
+    ]
+}
