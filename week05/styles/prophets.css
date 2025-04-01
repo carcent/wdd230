@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+section {
+    background-color: #ACC8E5;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+section:hover {
+    background-color: #D0D0D0;
+
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+h2,
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #112A46;
+}
+
+@media screen and(min-width:500) {
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
