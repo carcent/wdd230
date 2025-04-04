@@ -21,6 +21,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -82,14 +84,21 @@
                         <a href="https://codepen.io/Carla-Centurion/pen/VYwVBqo">Pseudo-Elements</a>
                         <a href="week05/new-ward-members.json">JSON</a>
                         <a href="week05/prophets.html">The Fetch API</a>
+                        <a href="week05/weather.html">Consuming a Weather API</a>
                     </li>
-                    <li><a href=""></a>Week 6</li>
                 </ul>
             </section>
             <section class="cardInfo">
                 <h2>Information</h2>
                 <p>Buenos Aires, Argentina</p>
-                <p>Weather</p>
+                <div class="weather">
+                    <h3>The Weather</h3>
+                    <p>The current temperature in Buenos Aires is <span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
                 <p>Page Visits: <span id="visitCount">0</span> times</p>
             </section>
         </div>
@@ -107,6 +116,7 @@
     <script src="scripts/visitCount.js"></script>
     <script src="scripts/hamburgerButton.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/weather.js"></script>
 
 </body>
 

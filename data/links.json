@@ -1,0 +1,101 @@
+{
+    "weeks": [
+        {
+            "week": "week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/Carla-Centurion/pen/LEYLOaR",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "https://codepen.io/Carla-Centurion/pen/zxYPaZB",
+                    "title": "Hamburguer Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "Dom Manipulation"
+                }
+            ]
+        },
+        {
+            "week": "week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazyload"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "BOM"
+                }
+            ]
+        },
+        {
+            "week": "week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/Carla-Centurion/pen/JojZgBM",
+                    "title": "Pseudo Classes"
+                },
+                {
+                    "url": "images/combinators.webp",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "Form-start/index.html",
+                    "title": "Form"
+                }
+            ]
+        },
+        {
+            "week": "week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/Carla-Centurion/pen/VYwVBqo",
+                    "title": "Pseudo-Elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "The Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Consuming a Weather API"
+                }
+            ]
+        }
+    ]
+}
