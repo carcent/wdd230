@@ -1,9 +1,9 @@
 const baseURL = "https://carcent.github.io/wdd230/";
-const linksURL = "https://carcent.github.io/wdd230/data/links.json";
+const linksURL = "https://carcent.github.io/wdd230/data/members.json";
 const members = document.querySelector('#members');
 
 
-async function getLinks() {
+async function getMembers() {
     try {
         const response = await fetch(linksURL);
         const data = await response.json();

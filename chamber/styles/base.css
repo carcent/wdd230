@@ -326,3 +326,55 @@ input[type="submit"]:hover {
     background-color: #a7163a;
     transform: scale(1.05);
 }
+
+/**-----toggle**/
+
+.view-toggle {
+    margin-bottom: 20px;
+}
+
+#members {
+    display: flex;
+    flex-direction: column;
+}
+
+.member {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.list-view .member {
+    width: 100%;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-view .item {
+    width: 100%;
+}
+
+.view-toggle button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.view toggle button img {
+    width: 24px;
+
+    height: 24px;
+
+
+
+}
