@@ -1,53 +1,52 @@
-const baseURL = "https://carcent.github.io/wdd230/";
-const linksURL = "https://carcent.github.io/wdd230/data/members.json";
-const members = document.querySelector('#members');
+document.addEventListener('DOMContentLoaded', async function () {
+    const directoryContainer = document.getElementById('directory-container');
+    const listViewBtn = document.getElementById('list-view');
+    const gridViewBtn = document.getElementById('grid-view');
 
 
-async function getMembers() {
-    try {
-        const response = await fetch(linksURL);
-        const data = await response.json();
-        console.table(data.weeks);
-        displayLinks(data.weeks);
-    } catch (error) {
-        console.error("Error fetching links:", error);
+    async function loadMembers() {
+        try {
+            const response = await fetch('data/members.json');
+            const data = await response.json();
+            const members = data.members
+
+            members.forEach(member => {
+                const memberCard = document.createElement('div');
+                memberCard.classList.add('member-card');
+
+                const memberHTML = `
+                    <div class="member-image">
+                        <img src="images/${member.image}" alt="${member.name}">
+                    </div>
+                    <div class="member-info">
+                        <h3>${member.name}</h3>
+                        <p><strong>Address:</strong> ${member.address}</p>
+                        <p><strong>Phone:</strong> ${member.phone}</p>
+                        <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+                        <p><strong>Membership Level:</strong> ${member.membership_level}</p>
+                       
+                    </div>
+                `;
+
+                memberCard.innerHTML = memberHTML;
+                directoryContainer.appendChild(memberCard);
+            });
+        } catch (error) {
+            console.error('Error loading the member data:', error);
+        }
     }
-}
-
-getLinks();
-
-const displayLinks = (weeks) => {
-
-    weeks.forEach((week) => {
-
-        let task = document.createElement('section');
-        task.classList.add('week-section');
 
 
-        let weekTitle = document.createElement('h3');
-        weekTitle.textContent = `${week.week}:`;
-        task.appendChild(weekTitle);
+    await loadMembers();
 
-
-        let linksContainer = document.createElement('ul');
-
-
-        week.links.forEach((link) => {
-
-            let listItem = document.createElement('li');
-            let url = document.createElement('a');
-            url.href = baseURL + link.url;
-            url.textContent = link.title;
-            url.target = "_blank";
-            listItem.appendChild(url);
-            linksContainer.appendChild(listItem);
-        });
-
-
-        task.appendChild(linksContainer);
-
-
-        cards.appendChild(task);
+    listViewBtn.addEventListener('click', () => {
+        directoryContainer.classList.remove('grid-view');
+        directoryContainer.classList.add('list-view');
     });
-};
 
+
+    gridViewBtn.addEventListener('click', () => {
+        directoryContainer.classList.remove('list-view');
+        directoryContainer.classList.add('grid-view');
+    });
+});

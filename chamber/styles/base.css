@@ -203,7 +203,7 @@ div {
 
 }
 
-/**---------FORM**/
+/**---------FORM-*------**/
 
 
 
@@ -327,54 +327,63 @@ input[type="submit"]:hover {
     transform: scale(1.05);
 }
 
-/**-----toggle**/
+/**-----DIRECTORY-------**/
+
+#directory-container {
+    margin-top: 20px;
+}
 
 .view-toggle {
     margin-bottom: 20px;
 }
 
-#members {
-    display: flex;
-    flex-direction: column;
-}
-
-.member {
+button {
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    margin: 0 10px;
+    cursor: pointer;
 }
 
-.list-view .member {
+.member-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.member-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.member-info {
+    text-align: center;
+}
+
+.member-info h3 {
+    margin: 10px 0;
+}
+
+.member-info a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+
+.member-info a:hover {
+    text-decoration: underline;
+}
+
+/* List view style */
+.list-view .member-card {
+    display: block;
     width: 100%;
 }
 
+/* Grid view style */
 .grid-view {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.grid-view .item {
-    width: 100%;
-}
-
-.view-toggle button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.view toggle button img {
-    width: 24px;
-
-    height: 24px;
-
-
-
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }

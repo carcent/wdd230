@@ -4,26 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carla Centurion - WDD230 - Web Frontend Development - Chamber of Commerce</title>
-    <meta name="description" content="WDD230 - Web Frontend Development, Carla Centurion - Chamber of Commerce">
+    <title>Carla Centurion - WDD230 - Web Frontend Development - Chamber of Commerce Directory</title>
+    <meta name="description"
+        content="WDD230 - Web Frontend Development, Carla Centurion - Chamber of Commerce Directory">
     <meta name="author" content="Carla Centurion">
-
-
-    <meta property="og:title" content="Quilmes Chamber of Commerce">
+    <meta property="og:title" content="Quilmes Chamber of Commerce - Directory">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://carcent.github.io/wdd230/chamber">
     <meta property="og:image" content="https://github.com/carcent/wdd230/blob/main/images/qulmes.png">
-
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -35,7 +31,6 @@
     <nav>
         <button id="myButton"></button>
         <ul class="menuLinks">
-
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li class="active"><a href="directory.html" title="directory">Directory</a></li>
@@ -43,25 +38,23 @@
         </ul>
     </nav>
     <main>
-        <div class="view-toogle">
-            <button id="grid"><img src="images/grid.JPG" alt="grid"></button>
-            <button id="list"><img src="images/list.JPG" alt="list"></button>
+        <h2>Business Directory</h2>
+        <div class="view-toggle">
+            <button id="list">List View</button>
+            <button id="grid">Grid View</button>
         </div>
-        <div id="members" class="list-view">
-            <h2>Business Directory</h2>
+        <div id="directory-container" class="list-view">
 
         </div>
     </main>
-
     <footer>
         <p>Quilmes Chamber Phone number: 423-265-2323</p>
         <p>©<span id="lastYear"></span> Carla Centurion Argentina wdd 230</p>
-        <p>Last Modified: <span id="lastModified"></span>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerButton.js"></script>
     <script src="scripts/members.js"></script>
-    <script src="scripts/toogle.js"></script>
 </body>
 
 </html>
