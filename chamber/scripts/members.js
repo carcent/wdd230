@@ -1,6 +1,6 @@
 const baseURL = "https://carcent.github.io/wdd230/";
 const linksURL = "https://carcent.github.io/wdd230/data/links.json";
-const cards = document.querySelector('#cards');
+const members = document.querySelector('#members');
 
 
 async function getLinks() {
