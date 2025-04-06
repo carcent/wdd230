@@ -5,7 +5,7 @@
             "address": "Calle 8, Quilmes, Buenos Aires",
             "phone": "54 11 4321-1092",
             "website": "www.aquapuretech.com",
-            "image": "images/aquapure.webp",
+            "image": "aquapure.webp",
             "membership_level": "Gold"
         },
         {
@@ -13,7 +13,7 @@
             "address": "Avenida 9, Quilmes, Buenos Aires",
             "phone": "54 11 4422-0033",
             "website": "www.nexusautomation.com",
-            "image": "images/nexus.webp",
+            "image": "nexus.webp",
             "membership_level": "Silver"
         },
         {
@@ -21,15 +21,15 @@
             "address": "Calle 15, Quilmes Oeste, Buenos Aires",
             "phone": "54 1145560712",
             "website": "www.brightpathconsulting.com",
-            "image": "images/brightpath.webp",
-            "membership_level": "Platinum"
+            "image": "brightpath.webp",
+            "membership_level": "Silver"
         },
         {
             "name": "Quantum Networks",
             "address": "Calle 5, Quilmes, Buenos Aires",
             "phone": "541146430923",
             "website": "www.quantumnetworks.com",
-            "image": "images/quantum.webp",
+            "image": "quantum.webp",
             "membership_level": "Bronze"
         },
         {
@@ -37,7 +37,7 @@
             "address": "Calle 10, Quilmes, Buenos Aires",
             "phone": "54 11 4567-8910",
             "website": "www.greentechinnovations.com",
-            "image": "images/greentech.webp",
+            "image": "greentech.webp",
             "membership_level": "Gold"
         },
         {
@@ -45,15 +45,15 @@
             "address": "Avenida 12, Quilmes Oeste, Buenos Aires",
             "phone": "54 11 4356-0198",
             "website": "www.stellarsolutions.com",
-            "image": "images/stellar.webp",
-            "membership_level": "Platinum"
+            "image": "stellar.webp",
+            "membership_level": "Bronze"
         },
         {
             "name": "Digital Horizons",
             "address": "Calle 25, Quilmes, Buenos Aires",
             "phone": "54 11 4789-0756",
             "website": "www.digitalhorizons.com",
-            "image": "images/digialh.webp",
+            "image": "digitalh.webp",
             "membership_level": "Silver"
         }
     ]

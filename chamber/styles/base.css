@@ -124,8 +124,12 @@ h3,
 p {
     font-family: inter;
     color: #f5f5dc;
+
 }
 
+h2 {
+    text-align: center;
+}
 
 .container {
     display: grid;
@@ -331,13 +335,16 @@ input[type="submit"]:hover {
 
 #directory-container {
     margin-top: 20px;
+
 }
 
 .view-toggle {
     margin-bottom: 20px;
+    align-items: center;
 }
 
 button {
+
     padding: 10px;
     margin: 0 10px;
     cursor: pointer;
@@ -347,13 +354,19 @@ button {
     border: 1px solid #ccc;
     padding: 15px;
     margin: 10px;
-    background-color: #fff;
+    background-color: #e0a7a7;
     border-radius: 8px;
+
+}
+
+.member-card:hover {
+    background-color: #ce8a8a;
+    border: 1px solid black;
 }
 
 .member-image img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
 }
 
@@ -366,24 +379,55 @@ button {
 }
 
 .member-info a {
-    color: #0073e6;
+    color: #092847;
     text-decoration: none;
+}
+
+.member-info h3 {
+    color: #112A46;
+}
+
+.member-info p {
+    color: black;
 }
 
 
 .member-info a:hover {
     text-decoration: underline;
+
+
 }
 
-/* List view style */
+
 .list-view .member-card {
-    display: block;
     width: 100%;
+    height: 110px;
+    display: inline-block;
+
 }
 
-/* Grid view style */
+.list-view .member-card:nth-child(odd) {
+    background-color: #f7a3a3;
+}
+
+
+.list-view .member-card h3 {
+    font-size: 14px;
+}
+
+.list-view .member-card p {
+    font-size: 12px;
+    margin: 5px 0;
+    padding: 0;
+
+}
+
+.list-view img {
+    display: none;
+}
+
 .grid-view {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
     gap: 20px;
 }
