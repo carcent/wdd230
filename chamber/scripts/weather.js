@@ -32,6 +32,7 @@ function displayResults(data) {
 
         weatherIcon.setAttribute('src', iconsrc);
         weatherIcon.setAttribute('alt', desc);
+        weatherIcon.style.display = 'block';
         captionDesc.textContent = `${desc}`;
     } else {
         console.error("Error: Missing data in the response.");
