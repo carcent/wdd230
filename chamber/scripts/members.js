@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         try {
             const response = await fetch('data/members.json');
             const data = await response.json();
-            const members = data.members
+            const members = data.members;
 
             members.forEach(member => {
                 const memberCard = document.createElement('div');

@@ -42,6 +42,12 @@
         </ul>
     </nav>
     <main>
+        <section id="event-banner" class="event-banner">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m. Don't miss it!</p>
+            <button id="close-banner" class="close-banner">❌</button>
+        </section>
+
+        </section>
         <div class="hero-contaioner">
             <img src="images/hero.webp" alt="Hero Image" class="hero-image" loading="lazy">
             <a href="join.html"><button class="cta-button">JOIN THE CHAMBER</button></a>
@@ -56,13 +62,23 @@
                 <p>Place holder</p>
             </section>
 
-            <section class="spotlight">
-                <h2>Spotlight Advertisements place holder</h2>
-                <p> Place holder</p>
+            <section class="spotlight-container">
+                <h2>Spotlight Advertisements</h2>
+                <div id="spotlight-members"></div>
             </section>
 
             <section class="weather">
-                <h2> Weather place holder</h2>
+                <h2>Today's weather
+                    <span id="current-temp"></span>
+                </h2>
+                <figure>
+                    <img id="weather-icon" src="" alt="weather icon">
+                    <figcaption></figcaption>
+                </figure>
+                <h2> 3 day ForeCast <div id="forecast-container"></div>
+                </h2>
+
+
             </section>
         </div>
 
@@ -75,6 +91,9 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerButton.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/getMembers.js"></script>
+    <script src="scripts/banner.js"></script>
 
 
 </body>
