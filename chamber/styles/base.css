@@ -173,7 +173,7 @@ figcaption {
 }
 
 footer {
-    background-color: #6F2D06;
+    background-color: #682904;
     text-align: center;
     padding: 20px;
 }
@@ -190,7 +190,6 @@ div {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
     width: 250px;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -201,35 +200,18 @@ div {
 }
 
 
-#welcomeMessage {
-    background-color: #e0f7fa;
-    border-left: 5px solid #00bcd4;
 
-    padding: 15px;
-    font-size: 18px;
-    color: #00796b;
-
-}
-
-#backSoonMessage {
+#sidebar {
     background-color: #fff9c4;
-    border-left: 5px solid #ffeb3b;
+    border: 5px solid #ffeb3b;
     padding: 15px;
     font-size: 18px;
-    color: #f57f17;
+    color: black;
+
+    gap: 15px;
 
 }
 
-#daysAgoMessage {
-    background-color: #e1bee7;
-
-    border-left: 5px solid #9c27b0;
-
-    padding: 15px;
-    font-size: 18px;
-    color: #6a1b9a;
-
-}
 
 
 #sidebar:hover {
@@ -245,14 +227,14 @@ div {
 
 legend {
     font-size: 22px;
-    color: rgb(226, 162, 162);
+    color: #7D1C1C;
 }
 
 label {
     display: block;
     font-weight: bold;
     font-size: 16px;
-    color: rgb(167, 121, 121);
+    color: rgb(126, 62, 62);
     margin-bottom: 10px;
     margin-top: 15px;
     margin-left: 5px;
@@ -274,6 +256,7 @@ input[type="tel"] {
     border-radius: 4px;
     margin-bottom: 15px;
     transition: border-color 0.3s ease;
+    min-height: 44px;
 
 }
 
@@ -285,7 +268,7 @@ input[type="radio"] {
 #bdesc {
     width: 70%;
     height: 80px;
-    padding: 1rem;
+    padding: 14px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -496,4 +479,26 @@ button {
 
 .close-banner:hover {
     color: red;
+}
+
+/**--------events----***/
+.first-event {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style-type: none;
+
+
+
+}
+
+
+.first-event img {
+    margin-top: 15px;
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+
 }
