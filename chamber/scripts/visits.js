@@ -25,3 +25,9 @@ if (!lastVisitDate) {
 }
 
 document.getElementById('sidebar').innerHTML = message;
+
+
+function togglePromoList() {
+    const list = document.getElementById("promoList");
+    list.style.display = list.style.display === "none" ? "block" : "none";
+}

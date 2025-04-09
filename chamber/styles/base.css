@@ -197,6 +197,7 @@ div {
     font-size: 16px;
     color: #333;
     margin-top: 20px;
+    margin-bottom: 20px;
     transition: all 0.3s ease;
 
 }
@@ -449,6 +450,20 @@ button {
     gap: 20px;
 }
 
+.event,
+.promotions {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+
+}
+
+.event img,
+.promotions img {
+    margin-bottom: 15px;
+}
+
 /**---BANNER----**/
 .event-banner {
     background-color: #ffcc00;
@@ -511,4 +526,24 @@ p {
     display: flex;
     margin-bottom: 10px;
 
+}
+
+
+.hidden {
+    display: none;
+}
+
+.promotions ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.promotions img.hover {
+    cursor: pointer;
+}
+
+.promotions ul li {
+    padding: 5px;
+    font-size: 22px;
 }
