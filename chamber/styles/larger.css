@@ -12,6 +12,15 @@
 
     }
 
+    .container-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 30px;
+        margin-right: 30px;
+        gap: 20px;
+
+    }
+
     .side-bar {
         display: grid;
         justify-content: center;
