@@ -153,6 +153,11 @@ h3 {
     ;
 }
 
+#current-temp,
+.weather {
+    background-color: #782507;
+}
+
 .weather {
     display: grid;
     place-items: center;
@@ -179,6 +184,7 @@ h3 {
     padding: 10px;
     border: #000 2px solid;
     border-radius: 10px;
+    background-color: #782507;
 
 }
 
